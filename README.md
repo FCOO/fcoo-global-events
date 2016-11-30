@@ -28,14 +28,13 @@ See [global-events] for description of the methods
 
 ## Name and description of global events
 The following global events are used in FCOOs web applications. 
-The events automatic added the first time a packages add or fire the event.
+The events are automatic added the first time a packages add or fire the event.
 All the names of the events are in lower-case and in the form `SOMETHINGchanged`, `SOMETHINGadded`, `SOMETHINGremoved` (`SOMETHING` = `dateformat`, etc.)
 
 | Event | Description: Fired when...are changed |
 | :--: |  :--- |
 | `languagechanged` | the language   |
-| `dateformatchanged` | the format of dates, the timezone, show/hide utc  |
-| `timeformatchanged` | the format of time (13:00 or 01:00pm), the timezone, show/hide utc |
+| `datetimeformatchanged` | the format of dates, time (13:00 or 01:00pm), the timezone, show/hide utc  |
 | `numberformatchanged` | the format of numbers (1.000,123 or 1,000.123) |
 | `latlngformatchanged` | the format of posiitons/lat-lng |
 
