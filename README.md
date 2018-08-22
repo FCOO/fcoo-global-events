@@ -5,7 +5,7 @@
 ## Description
 Create `window.fcoo.events` as `GlobalEvents`
 
-Description of common evnets used by FCOOs web applications. 
+Description of common events used by FCOOs web applications. 
 
 
 ## Installation
@@ -30,13 +30,15 @@ See [global-events] for description of the methods
 The following global events are used in FCOOs web applications. 
 The events are automatic added the first time a packages add or fire the event.
 All the names of the events are in lower-case and in the form `SOMETHINGchanged`, `SOMETHINGadded`, `SOMETHINGremoved` (`SOMETHING` = `dateformat`, etc.)
+All the names of the events are defined as upper-case const in `window.fcoo.events` as `window.fcoo.event.    SOMETHINGCHANGED`
 
-| Event | Description: Fired when...are changed |
-| :--: |  :--- |
-| `languagechanged` | the language   |
-| `datetimeformatchanged` | the format of dates, time (13:00 or 01:00pm), the timezone, show/hide utc  |
-| `numberformatchanged` | the format of numbers (1.000,123 or 1,000.123) |
-| `latlngformatchanged` | the format of posiitons/lat-lng |
+| Event | Const | Description: Fired when...are changed |
+| :--: |  :--: | :--- |
+| `languagechanged` | `fcoo.events.LANGUAGECHANGED` | the language   |
+| `datetimeformatchanged` | `fcoo.events.DATETIMEFORMATCHANGED` | the format of dates, time (13:00 or 01:00pm), the timezone, show/hide utc  |
+| `numberformatchanged` | `fcoo.events.NUMBERFORMATCHANGED` | the format of numbers (1.000,123 or 1,000.123) |
+| `latlngformatchanged` | `fcoo.events.LATLNGFORMATCHANGED` | the format of positions/lat-lng |
+| `unitchanged` | `fcoo.events.UNITCHANGED` | the unit use to display variables. Eq. length changed from `km` to `nm` |
 
 
 
