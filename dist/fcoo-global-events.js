@@ -16,7 +16,7 @@
 
     window.fcoo.events = new window.GlobalEvents();
 
-    var globalEventsNames = ['languagechanged', 'datetimeformatchanged', 'numberformatchanged', 'latlngformatchanged', 'unitchanged']
+    var globalEventsNames = ['languagechanged', 'timezonechanged', 'datetimeformatchanged', 'numberformatchanged', 'latlngformatchanged', 'unitchanged']
 
     $.each( globalEventsNames, function( index, eventName ){
         window.fcoo.events[ eventName.toUpperCase() ] = eventName;

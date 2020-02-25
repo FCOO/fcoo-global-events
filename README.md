@@ -35,7 +35,8 @@ All the names of the events are defined as upper-case const in `window.fcoo.even
 | Event | Const | Description: Fired when...are changed |
 | :--: |  :--: | :--- |
 | `languagechanged` | `fcoo.events.LANGUAGECHANGED` | the language   |
-| `datetimeformatchanged` | `fcoo.events.DATETIMEFORMATCHANGED` | the format of dates, time (13:00 or 01:00pm), the timezone, show/hide utc  |
+| `datetimeformatchanged` | `fcoo.events.DATETIMEFORMATCHANGED` | the format of dates, time (13:00 or 01:00pm), show/hide utc  |
+| `timezonechanged` | `fcoo.events.TIMEZONECHANGED` | the timezone |
 | `numberformatchanged` | `fcoo.events.NUMBERFORMATCHANGED` | the format of numbers (1.000,123 or 1,000.123) |
 | `latlngformatchanged` | `fcoo.events.LATLNGFORMATCHANGED` | the format of positions/lat-lng |
 | `unitchanged` | `fcoo.events.UNITCHANGED` | the unit use to display variables. Eq. length changed from `km` to `nm` |
