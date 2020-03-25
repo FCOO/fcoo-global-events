@@ -12,14 +12,13 @@
 	"use strict";
 
 	//Create fcoo-namespace
-	window.fcoo = window.fcoo || {};
+	var ns = window.fcoo = window.fcoo || {};
 
-    window.fcoo.events = new window.GlobalEvents();
+    ns.events = new window.GlobalEvents();
+    ns.events.eventNames = ['LANGUAGECHANGED', 'TIMEZONECHANGED', 'DATETIMEFORMATCHANGED', 'NUMBERFORMATCHANGED', 'LATLNGFORMATCHANGED', 'UNITCHANGED'];
 
-    var globalEventsNames = ['languagechanged', 'timezonechanged', 'datetimeformatchanged', 'numberformatchanged', 'latlngformatchanged', 'unitchanged']
-
-    $.each( globalEventsNames, function( index, eventName ){
-        window.fcoo.events[ eventName.toUpperCase() ] = eventName;
+    $.each( ns.events.eventNames, function( index, eventName ){
+        ns.events[ eventName ] = eventName;
     });
 
 }(this, document));
